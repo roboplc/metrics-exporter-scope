@@ -2049,6 +2049,8 @@ dependencies = [
 [[package]]
 name = "metrics-exporter-scope"
 version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6a82f210fa68564083dc522c931efc0c5aeb776f73174f8d79cce79281cfd2fe"
 dependencies = [
  "bma-ts",
  "metrics",
@@ -2062,7 +2064,7 @@ dependencies = [
 
 [[package]]
 name = "metrics-scope"
-version = "0.1.0"
+version = "0.1.2"
 dependencies = [
  "atomic_float",
  "bma-ts",

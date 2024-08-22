@@ -1,6 +1,6 @@
 [package]
 name = "metrics-scope"
-version = "0.1.0"
+version = "0.1.2"
 edition = "2021"
 authors = ["Serhij S. <div@altertech.com>"]
 license = "Apache-2.0"
@@ -17,7 +17,7 @@ eframe = "0.28.1"
 egui = "0.28.1"
 egui_extras = { version = "0.28.1", features = ["default", "all_loaders"] }
 egui_plot = "0.28.1"
-metrics-exporter-scope = { path = ".." }
+metrics-exporter-scope = { version = "0.1.2" }
 once_cell = "1.19.0"
 parking_lot = "0.12.3"
 rtsc = { version = "0.3", features = ["parking_lot"] }
