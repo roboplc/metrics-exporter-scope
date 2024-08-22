@@ -56,7 +56,7 @@ server sends such packets every 5 seconds (by default).
                 "label_name2": "label_value2"
             }
         }
-    ]
+    }
 }
 ```
 
