@@ -32,13 +32,13 @@ where
 
 ## Communication
 
-The server sends serialized metrics snapshot packets as well as informational
-ones to the client. The first packet is always an informational one. The client
+The server sends serialized metrics snapshot packets as well as information
+ones to the client. The first packet is always an information one. The client
 should determine the packet type according to its structure.
 
-### Informational packets
+### Information packets
 
-The informational packets are used to send metrics metadata to the client. The
+The information packets are used to send metrics metadata to the client. The
 server sends such packets every 5 seconds (by default).
 
 ```json

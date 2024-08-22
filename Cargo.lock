@@ -463,7 +463,7 @@ dependencies = [
 
 [[package]]
 name = "metrics-exporter-scope"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "bma-ts",
  "metrics 0.22.3",
