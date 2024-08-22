@@ -85,7 +85,7 @@ using the sampling interval, specified during `Chat` phase.
 where
 
 * `t` is the timestamp of the snapshot, in nanoseconds. The timestamp is monotonic
-  and relative to the time the `Communication` phase started.
+  and relative to the time point the `Communication` phase started at.
 
 * `d` is the dictionary of metrics. The keys are metric names, and the values
   are float numbers.
