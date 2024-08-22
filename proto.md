@@ -43,15 +43,15 @@ server sends such packets every 5 seconds (by default).
 
 ```json
 {
-    metrics:
+    "metrics":
         "metric_name": {
-            labels: {
+            "labels": {
                 "label_name": "label_value",
                 "label_name2": "label_value2"
             }
         },
         "metric_name2": {
-            labels: {
+            "labels": {
                 "label_name": "label_value",
                 "label_name2": "label_value2"
             }
@@ -75,7 +75,7 @@ using the sampling interval, specified during `Chat` phase.
 ```json
 {
     "t": 1234567890,
-    d: {
+    "d": {
         "metric_name": 123.4,
         "metric_name2": 456.7
     }
