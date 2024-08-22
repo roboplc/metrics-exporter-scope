@@ -82,7 +82,7 @@ RGB, using either `#RRGGBB` or `#RGB` format.
 If a metric is not prefixed with `~`, it is processed by the primary exporter.
 
 ```rust,ignore
-let primary_recorder = SomePrimaryMetricsRecorder::new();
+let primary_recorder = SomePrimaryMetricsRecorder::new().build();
 
 metrics_exporter_scope::ScopeBuilder::new()
     .with_fallback(Box::new(primary_recorder))
