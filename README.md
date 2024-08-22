@@ -18,7 +18,7 @@ display real-time data from embedded systems, industrial automation
 controllers, robotics, network devices, etc.
 
 <img src="https://raw.githubusercontent.com/roboplc/metrics-exporter-scope/main/scope.gif"
-width="300" />
+width="400" />
 
 `metrics-exporter-scope` is a part of the [RoboPLC](https://roboplc.com)
 project.
