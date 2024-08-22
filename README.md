@@ -98,7 +98,7 @@ A fall-back example can be found in
 The repository contains a client implementation for the oscilloscope, which is
 available for all major desktop platforms:
 
-```
+```shell
 cargo install metrics-scope
 ```
 
