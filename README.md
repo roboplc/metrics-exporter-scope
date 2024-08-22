@@ -112,6 +112,20 @@ Client features:
 
 * Triggers
 
+Navigation:
+
+* `L` - toggle chart legends
+
+* `F5` - reset chart views and clear active trigger events
+
+* `P` - pause/resume chart updates
+
+* `Mouse click + drag` - move chart view (X-axis is moved for all charts)
+
+* `Ctrl + mouse wheel` - zoom charts in/out
+
+* `Mouse double click` - reset chart view
+
 ## Real-time safety
 
 The exporter does not contain any locks and is safe to be used in real-time
