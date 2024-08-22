@@ -43,7 +43,7 @@ server sends such packets every 5 seconds (by default).
 
 ```json
 {
-    "metrics":
+    "metrics": {
         "metric_name": {
             "labels": {
                 "label_name": "label_value",
