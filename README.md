@@ -130,3 +130,5 @@ features and enabling the `msrv` feature:
 [dependencies]
 metrics-exporter-scope = { version = "0.1", default-features = false, features = ["msrv"] }
 ```
+
+If set, `metrics` version 0.22 is used.
