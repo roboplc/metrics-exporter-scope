@@ -17,7 +17,7 @@ developed to sample metrics with high (1Hz+) frequencies and is mostly used to
 display real-time data from embedded systems, industrial automation
 controllers, robotics, network devices, etc.
 
-<img src="https://raw.githubusercontent.com/roboplc/metrics-exporter-scope/scope.gif"
+<img src="https://raw.githubusercontent.com/roboplc/metrics-exporter-scope/main/scope.gif"
 width="300" />
 
 `metrics-exporter-scope` is a part of the [RoboPLC](https://roboplc.com)
