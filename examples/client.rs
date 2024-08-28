@@ -3,7 +3,7 @@ use std::{net::TcpStream, time::Duration};
 use metrics_exporter_scope::{protocol, ClientSettings};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let mut client = TcpStream::connect("localhost:5001")?;
+    let mut client = TcpStream::connect("127.0.0.1:5001")?;
     let version = protocol::read_version(&client)?;
     if version != protocol::VERSION {
         return Err("Incompatible version".into());
