@@ -336,7 +336,7 @@ impl Scope {
         match event {
             Event::Connect => {
                 self.data.clear();
-                self.plots.clear();
+                //self.plots.clear();
                 self.colors.clear();
                 self.connected = true;
             }
