@@ -1,10 +1,10 @@
 [package]
 name = "metrics-scope"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2021"
 authors = ["Serhij S. <div@altertech.com>"]
 license = "Apache-2.0"
-repository = "https://github.com/roboplc/metrics-scope"
+repository = "https://github.com/roboplc/metrics-exporter-scope"
 description = "Metrics scope UI"
 readme = "README.md"
 keywords = ["metrics", "scope", "ui"]
