@@ -222,7 +222,7 @@ impl Snapshot {
 /// Exporter builder
 pub struct ScopeBuilder {
     addr: SocketAddr,
-    fallback: Option<Box<dyn Recorder>>,
+    fallback: Option<Box<dyn Recorder + Send + Sync>>,
 }
 
 impl Default for ScopeBuilder {
@@ -245,7 +245,7 @@ impl ScopeBuilder {
         self
     }
     /// Set the fallback recorder
-    pub fn with_fallback(mut self, fallback: Box<dyn Recorder>) -> Self {
+    pub fn with_fallback(mut self, fallback: Box<dyn Recorder + Send + Sync>) -> Self {
         self.fallback = Some(fallback);
         self
     }
@@ -263,11 +263,14 @@ impl ScopeBuilder {
 #[derive(Clone)]
 pub struct ScopeRecorder {
     inner: Arc<Inner>,
-    fallback: Arc<Option<Box<dyn Recorder>>>,
+    fallback: Arc<Option<Box<dyn Recorder + Send + Sync>>>,
 }
 
 impl ScopeRecorder {
-    fn build<A: Into<SocketAddr>>(addr: A, fallback: Option<Box<dyn Recorder>>) -> Self {
+    fn build<A: Into<SocketAddr>>(
+        addr: A,
+        fallback: Option<Box<dyn Recorder + Send + Sync>>,
+    ) -> Self {
         Self {
             inner: Arc::new(Inner::new(addr.into())),
             fallback: fallback.into(),
