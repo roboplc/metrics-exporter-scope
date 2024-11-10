@@ -16,7 +16,7 @@ fn read_remote(
     let mut client = TcpStream::connect_timeout(&addr, timeout)?;
     client.set_nodelay(true)?;
     client.set_read_timeout(Some(timeout))?;
-    let version = protocol::read_version(&client).expect("Failed to read version");
+    let version = protocol::read_version(&client)?;
     if version != protocol::VERSION {
         return Err(format!("Unsupported version: {}", version).into());
     }
